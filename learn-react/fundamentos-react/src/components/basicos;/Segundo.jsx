@@ -3,7 +3,7 @@ import React from "react"
 
 const segundo = () => {
   
-  const msg = 'Seja Bem vindo!';
+  const msg = 'Exemplo utilizando const';
     return (
     <div>
        <h2>Segundo Componente</h2>
