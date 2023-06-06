@@ -1,3 +1,21 @@
-body{
-    background-color: #222;
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+body {
+  font-family: Oswald;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 200;
+}
+
+
+
+h2,
+h3 {
+  margin: 0;
 }

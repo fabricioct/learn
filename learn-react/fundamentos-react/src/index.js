@@ -1,9 +1,9 @@
+import { createRoot } from "react-dom/client";
 import "./index.css";
-import ReactDOM from "react-dom";
-import React from "react";
-import Primeiro from "./components/basicos;/Primeiro";
+import App from "./App";
 
 
-ReactDOM.render(  <div>
-    <Primeiro/>
-  </div>, document.getElementById("root"));
+const container = document.getElementById("root")
+const root = createRoot(container);
+
+root.render(<App/>);
