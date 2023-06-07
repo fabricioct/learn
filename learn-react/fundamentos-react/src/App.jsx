@@ -1,18 +1,23 @@
 import "./App.css";
 import React from "react";
-import Primeiro from "./components/basicos;/Primeiro";
-import Segundo from "./components/basicos;/Segundo";
-import ComParametro from "./components/basicos;/ComParametro";
-import Familia from "./components/basicos;/Familia";
-import FamiliaMembro from "./components/basicos;/FamiliaMembro";
+import Primeiro from "./components/basicos/Primeiro";
+import Segundo from "./components/basicos/Segundo";
+import ComParametro from "./components/basicos/ComParametro";
+import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Card from "./layout/Card";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 const app = () => {
   return (
     <div className="app">
       <h1>Fundamentos React</h1>
-      <div className="cards">       
-      <Card titulo="Famílica Membro" color="#d62d20">
+      <div className="cards">    
+      <Card titulo="Repetição" color="#400036">
+      <ListaAlunos></ListaAlunos>
+         
+       </Card>
+      <Card titulo="Famílica Membro" color="#FF81D0">
        <Familia sobrenome="Ferreira">
         <FamiliaMembro nome="Fabricio"/>
         <FamiliaMembro nome="Juliana"/>
