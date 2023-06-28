@@ -1,0 +1,31 @@
+// Global variable putting in .vscode file settings.json
+
+// Local Variable
+@baseUrl  = https://jsonplaceholder.typicode.com/posts
+
+// end local Variables
+
+
+###
+GET {{host}}/posts/1
+
+###
+# @prompt postNumber Number post
+GET {{host}}/posts/{{postNumber}}
+
+
+###
+# @name post
+GET {{host}}/posts/1
+
+@commentPost = {{post.response.body.$.body}}
+
+###
+POST {{host}}/posts
+content-type: application/json
+
+{
+    "title": "foo",
+    "body": "{{$guid}}",
+    "userId": 1
+}

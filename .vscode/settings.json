@@ -1,0 +1,17 @@
+{
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "version": "v1"
+    },
+    "local": {
+      "version": "v2",
+      "host": "https://jsonplaceholder.typicode.com",
+      // "host": "localhost",
+      "secretKey": "DEVSECRET"
+    },
+    "production": {
+      "host": "https://jsonplaceholder.typicode.com",
+      "secretKey": "PRODSECRET"
+    }
+  }
+}
